@@ -1,0 +1,25 @@
+# ==========================================
+# Hassas Bilgiler ve Şifreler (Gizlilik Koruması)
+# ==========================================
+inc/config.php
+teknikel/credentials.json
+
+# ==========================================
+# IDE ve Editör Dosyaları
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Sistem ve Log Dosyaları
+# ==========================================
+*.log
+Thumbs.db
+.DS_Store
+
+# ==========================================
+# Arka Plan Analiz ve Geçici Dosyalar
+# ==========================================
+graphify-out/
+.gemini/
+scratch/

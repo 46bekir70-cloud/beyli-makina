@@ -1,0 +1,643 @@
+{
+    "site": {
+        "phone_display": "0344 236 32 32",
+        "phone_link": "+903442363232",
+        "whatsapp_link": "https://wa.me/905333403285",
+        "email": "beyli@beylimakina.com",
+        "address": "Yavuz Selim, Tornacılar Cd. No:61, 46080 Kahramanmaraş Merkez, 46080 Dulkadiroğlu/Kahramanmaraş",
+        "linkedin_link": "#",
+        "footer_note": "© 2026 Beyli Makina Sanayi ve Ticaret Ltd. Şti. | Tüm hakları saklıdır.",
+        "footer_about": "Kahramanmaraş Küçük Sanayi Sitesi'nde hassas CNC torna ve freze imalatı. Prototipten seri üretime esnek çözümler.",
+        "phone_icon": "/images/uploads/site-logolari/20260811_114159_bf2ac0.png",
+        "whatsapp_icon": "/images/uploads/site-logolari/20260811_113858_d08a65.png",
+        "email_icon": "",
+        "address_icon": "",
+        "whatsapp_text": "0533 340 32 85",
+        "verify_yandex": "<meta name=\"yandex-verification\" content=\"c30360d38011981d\" />",
+        "verify_google": "<meta name=\"google-site-verification\" content=\"78jW0lcY9tk-4zneQi6IkMQxlLkhGotRiucGTZcOfuM\" />",
+        "share_image": "/images/uploads/site-logolari/whatsapp-image-2026-08-10-at-13-28-0311-20260820_181940_d50e1e.jpg"
+    },
+    "menu": {
+        "urunler_label": "Ürünlerimiz",
+        "urunler_items": [
+            {
+                "label": "Torna Parçaları",
+                "link": "index.php#katalog"
+            },
+            {
+                "label": "Freze Parçaları",
+                "link": "index.php#katalog"
+            },
+            {
+                "label": "Flanş & Bağlantı Elemanları",
+                "link": "index.php#katalog"
+            }
+        ],
+        "hizmetler_label": "Hizmetlerimiz",
+        "hizmetler_items": [
+            {
+                "label": "CNC Torna",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "CNC Freze",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "Mühendislik & Tasarım",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "Prototip & Seri Üretim",
+                "link": "index.php#hizmetler"
+            }
+        ]
+    },
+    "hero": {
+        "tag": "Kahramanmaraş KSB'de Hassas İmalat",
+        "title_before": "Geleceği",
+        "title_highlight": "Ustalığımız&Tecrübemiz",
+        "title_after": "ile Şekillendiriyoruz",
+        "subtitle": "Mühendislik titizliği ve son teknoloji CNC tezgahlarıyla, mikron hassasiyetinde parça üretim hizmeti veriyoruz",
+        "cta1_text": "Ürün Kataloğunu Gör →",
+        "cta1_link": "/urunler",
+        "cta2_text": "Özel Sipariş Ver",
+        "cta2_link": "/teklif",
+        "stats": [],
+        "tag_link": "https://maps.app.goo.gl/1PdTvDTCfzaojur79",
+        "slides": [
+            {
+                "image": "/images/uploads/20260811_162224_4859eb.jpg",
+                "focus": "53% 57%"
+            },
+            {
+                "image": "/images/uploads/textilegence-20260811-160738-74f55c.jpg",
+                "focus": "51% 5%"
+            },
+            {
+                "image": "/images/uploads/bal-iplik-tekstil-sanayi7-20260811_160738_7823b7.jpg",
+                "focus": "50% 50%"
+            },
+            {
+                "image": "/images/uploads/whatsapp-image-2026-08-11-at-16-13-32-20260811_161428_9cff7c.jpg",
+                "focus": "86% 51%"
+            }
+        ],
+        "slide_interval": 5
+    },
+    "about_teaser": {
+        "tag": "Hakkımızda",
+        "title": "Beyli Makina Hakkında",
+        "html": "<p>Beyli Makina’nın temelleri, 1963 yılında Bekir Çokbekler (bilinen adıyla Tüfekçi Bekir) tarafından Kahramanmaraş’ta atıldı. İlk yıllarında 'Teknikel Makina' adıyla hassas işçilik gerektiren silah bakım, onarım ve üretim alanında faaliyet gösteren firmamız, zamanla değişen bölgesel dinamiklere hızla uyum sağladı...</p>",
+        "stats": [
+            {
+                "num": "60+",
+                "label": "Yıl Tecrübe"
+            },
+            {
+                "num": "500+",
+                "label": "Tamamlanan Proje"
+            },
+            {
+                "num": "%100",
+                "label": "Yerli Üretim"
+            }
+        ],
+        "visual_emoji": "🏭",
+        "visual_image": "/images/uploads/20260810_134457_067077a5.jpg",
+        "link_text": "Hakkımızda Devamını Oku →",
+        "link_target": "hakkimizda"
+    },
+    "services": [
+        {
+            "slug": "makine-muhendisligi-tasarim",
+            "icon": "📐",
+            "title": "Mühendislik & Tasarım",
+            "desc": "Teknik çizimden üretime, mühendislik destekli kişisel parça geliştirme süreci.",
+            "sort_order": 4,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Teknik çizimden üretime, mühendislik destekli kişisel parça geliştirme süreci.",
+            "image": "",
+            "html": "<p>Fikirlerinizi üretime hazır, yüksek performanslı mekanik projelere dönüştürüyoruz. CAD/CAM yazılımları, gelişmiş analiz yöntemleri ve imalata uygun tasarım (DFM) disiplinimizle; parçaların sadece çizimini yapmakla kalmıyor, sahada kusursuz çalışacak optimum çözümleri geliştiriyoruz. Doğru malzeme seçimi ve milimetrik hassasiyetle, üretim maliyetlerinizi düşürürken kalitenizi artırıyoruz.</p><p><br></p>",
+            "stats": [],
+            "machines": [],
+            "card_image": "/images/uploads/hizmetler-ekrani/gemini-generated-image-flkspoflkspoflks-20260811_144644_ab5866.jpg",
+            "card_focus": "",
+            "card_blur": 0,
+            "card_bright": 75,
+            "hero_image": "/images/uploads/hizmetler-ekrani/gemini-generated-image-flkspoflkspoflks-20260811_144644_ab5866.jpg",
+            "hero_focus": ""
+        },
+        {
+            "slug": "prototip-seri-uretim",
+            "icon": "🛠️",
+            "title": "Prototip & Seri Üretim",
+            "desc": "Tekli prototipten yüksek adetli seri üretime kadar esnek kapasiteli üretim imkanı",
+            "sort_order": 3,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Tekli prototipten yüksek adetli seri üretime kadar esnek kapasiteli üretim imkanı.",
+            "image": "",
+            "html": "<p><span style=\"color: rgb(0, 0, 0);\">Fikir aşamasındaki projelerinizi yüksek hassasiyetli prototiplerle somutlaştırıyor, doğrulanmış tasarımlarınızı optimum maliyet ve yüksek kalite standartlarıyla seri üretime taşıyoruz. Fikirden nihai ürüne kadar olan tüm imalat süreçlerinizde, uzman mühendislik kadromuz ve modern makine parkurumuzla esnek, hızlı ve güvenilir çözümler sunuyoruz.</span></p>",
+            "stats": [],
+            "machines": [],
+            "card_image": "/images/uploads/hizmetler-ekrani/114eae-c1117bd8d55e4a5c8d419c2353a141bf-mv2-20260811_155933_a1d372.jpg",
+            "card_focus": "48% 36%",
+            "card_blur": 0,
+            "card_bright": 65,
+            "hero_image": "/images/uploads/hizmetler-ekrani/114eae-c1117bd8d55e4a5c8d419c2353a141bf-mv2-20260811_155933_a1d372.jpg",
+            "hero_focus": ""
+        },
+        {
+            "slug": "tekstil-makinalari-yedek-parca-imalati",
+            "title": "Tekstil Makinaları Yedek Parça",
+            "desc": "Her türlü tekstil makinalarının yedek parça imalatını yapıyoruz",
+            "card_image": "/images/uploads/hizmetler-ekrani/textilegence-20260903-152331-f71f98.jpg",
+            "card_focus": "51% 71%",
+            "card_blur": 0,
+            "card_bright": 75,
+            "sort_order": 1,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Her türlü tekstil makinalarının yedek parça imalatını yapıyoruz",
+            "image": "",
+            "html": "<p>Tekstil sektöründe yıllara dayanan köklü tecrübemizle, üretim hatlarınızın hiçbir aksama yaşamadan ve tam kapasiteyle çalışması için yüksek hassasiyetli yedek parça çözümleri sunuyoruz. İhtiyaç duyduğunuz bileşenler ister sektördeki standart ölçülerde olsun, ister tamamen işletmenize özgü özel bir tasarıma sahip olsun fark etmeksizin; her türlü talebinizi yüksek teknolojiye sahip makine parkurumuzda büyük bir titizlikle üretiyoruz.</p><p>​Gerçekleştirdiğimiz bu hassas üretim süreciyle, tesisinizin genel performansını artırıyor ve makinelerinizin kullanım ömrünü maksimum seviyeye çıkarıyoruz. Temel amacımız, zamanla meydana gelebilecek aşınma veya beklenmedik arıza kaynaklı duruş sürelerini minimuma indirmektir. Üretim bandındaki her saniyenin değerini bilerek, sunduğumuz bu dayanıklı çözümlerle işletmenize sürdürülebilir, güvenilir ve uzun vadeli bir maliyet ve zaman avantajı sağlamayı hedefliyoruz.</p><p>Eğer ürünlerimiz ile ilgilenmek isterseniz katalogdaki <a href=\"/urunler?kategori=iplik\">Tekstil Makinaları</a> bölümüne bakabilirsiniz.</p>",
+            "stats": [],
+            "machines": [],
+            "hero_image": "/images/uploads/hizmetler-ekrani/textilegence-20260903-152331-f71f98.jpg",
+            "hero_focus": "50% 53%"
+        },
+        {
+            "slug": "kuyumcu-aletleri-ve-makinalari",
+            "title": "Kuyumcu Aletleri ve Makinaları",
+            "desc": "Kuyumcu makinaları ve bu makinelerin yedek parça üretimini yapıyoruz.",
+            "card_image": "/images/uploads/whatsapp-image-2026-09-04-at-10-58-19-20260904_105931_1c727d.jpg",
+            "card_focus": "50% 50%",
+            "card_blur": 0,
+            "card_bright": 130,
+            "sort_order": 2,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Kuyumcu makinaları ve bu makinelerin yedek parça üretimini yapıyoruz.",
+            "image": "",
+            "html": "<p>Kuyumculuk zanaatinin gerektirdiği hassasiyeti ve dayanıklılığı biliyor, üretimlerimizi bu doğrultuda şekillendiriyoruz. Atölyeler için uzun ömürlü, kullanımı pratik ve yüksek kaliteli el aletleri üretiyoruz. Özellikle yüzük ve bilezik açma aparatları gibi ustaların sıkça kullandığı temel ekipmanlarda ergonomiyi ve sağlamlığı ön planda tutuyoruz.</p><p>​Bunun yanı sıra, kuyumculuk sektöründe aktif olarak kullanılan makineler için özel yedek parça imalatı da gerçekleştiriyoruz. Üretim sürecinde yaşanan en ufak bir donanım arızasının bile ciddi zaman ve maliyet kayıplarına yol açtığının farkındayız. Sunduğumuz dayanıklı yedek parçalar ve kaliteli el aletleriyle bu tür sorunları en aza indiriyoruz. Amacımız, zanaatkârlarımızın teknik aksaklıklara takılmadan tamamen kendi işlerine odaklanmalarını ve en yüksek verimle, kesintisiz bir şekilde üretime devam etmelerini sağlamaktır.</p>",
+            "stats": [],
+            "machines": [],
+            "hero_image": "/images/uploads/whatsapp-image-2026-09-04-at-10-58-19-20260904_105931_1c727d.jpg",
+            "hero_focus": ""
+        }
+    ],
+    "catalog": [
+        {
+            "cat": "torna",
+            "cat_label": "Torna",
+            "title": "Miller Şaft (Ø40)",
+            "emoji": "⚙️",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Çelik (St 52)"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Sertleştirme"
+                ],
+                [
+                    "Üretim Süresi",
+                    "3-5 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "flans",
+            "cat_label": "Flanş",
+            "title": "Bağlantı Flanşı",
+            "emoji": "🔩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Paslanmaz Çelik 304"
+                ],
+                [
+                    "Tolerans",
+                    "±0.03 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Eloksal"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-4 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "freze",
+            "cat_label": "Freze",
+            "title": "Kalıp Gövdesi",
+            "emoji": "🧩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Alüminyum 7075"
+                ],
+                [
+                    "Tolerans",
+                    "±0.015 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Kumlama"
+                ],
+                [
+                    "Üretim Süresi",
+                    "5-7 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "torna",
+            "cat_label": "Torna",
+            "title": "Dişli Göbeği",
+            "emoji": "⚙️",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Bronz"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Parlatma"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-3 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "freze",
+            "cat_label": "Freze",
+            "title": "Adaptör Plakası",
+            "emoji": "🔲",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Çelik (Ck45)"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Siyah Oksit"
+                ],
+                [
+                    "Üretim Süresi",
+                    "3-4 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "flans",
+            "cat_label": "Flanş",
+            "title": "Boru Rakoru",
+            "emoji": "🔩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Paslanmaz Çelik 316"
+                ],
+                [
+                    "Tolerans",
+                    "±0.025 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Pasivasyon"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-4 gün"
+                ]
+            ]
+        }
+    ],
+    "order_section": {
+        "tag": "Özel Sipariş",
+        "title": "Kişiye Özel Parça Siparişi",
+        "text": "İhtiyacınız olan parçanın teknik çizimini veya bilgilerini iletin, size özel teklif hazırlayalım. Teknik çizim dosyanızı da forma ekleyebilirsiniz.",
+        "side_title": "İletişim",
+        "side_text": "Formu doldurmak yerine doğrudan bize ulaşmak isterseniz:",
+        "form_title": "Teklif Formu",
+        "part_types": [
+            "Hazır Stoklu Ürünler",
+            "Diğer/Özel Tasarım Ürünler",
+            "Üretime Hazır Ürünler"
+        ],
+        "contact_buttons": [
+            {
+                "icon": "📞",
+                "image": "/images/uploads/20260811_114122_dcb56d.png",
+                "label": "Telefon",
+                "text": "0344 236 32 32",
+                "type": "tel",
+                "value": "+903442363232"
+            },
+            {
+                "icon": "✉️",
+                "image": "",
+                "label": "E-Posta",
+                "text": "beyli@beylimakina.com",
+                "type": "mail",
+                "value": "beyli@beylimakina.com"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_161905_5f9b2e.png",
+                "label": "Adres",
+                "text": "Kahramanmaraş Küçük Sanayi Bölgesi",
+                "type": "link",
+                "value": "https://maps.app.goo.gl/1PdTvDTCfzaojur79"
+            },
+            {
+                "icon": "💬",
+                "image": "/images/uploads/site-logolari/20260811_113858_d08a65.png",
+                "label": "Whatsapp",
+                "text": "0533 340 32 85",
+                "type": "link",
+                "value": "https://wa.me/905333403285"
+            }
+        ],
+        "hero_image": "",
+        "hero_focus": "",
+        "social_buttons": [],
+        "corporate": {
+            "kvkk_url": "/kvkk-aydinlatma-metni"
+        }
+    },
+    "pages": [
+        {
+            "slug": "hakkimizda",
+            "title": "Hakkımızda",
+            "hero_tag": "Kahramanmaraş KSB",
+            "hero_subtitle": "Mühendisliğini; bilgi birikimini; tecrübesiyle birleştiren, Kahramanmaraş'ta faaliyet gösteren bir imalat atölyesiyiz.",
+            "html": "<p>Beyli Makina’nın temelleri, 1963 yılında Bekir Çokbekler (bilinen adıyla Tüfekçi Bekir) tarafından Kahramanmaraş’ta atıldı. İlk yıllarında 'Teknikel Makina' adıyla hassas işçilik gerektiren silah bakım, onarım ve üretim alanında faaliyet gösteren firmamız, zamanla değişen bölgesel dinamiklere hızla uyum sağladı.</p><p>​Kahramanmaraş'ta tekstil sektörünün büyük bir ivme kazanmasıyla birlikte oluşan tekstil makinelerinde yedek parça ihtiyacını karşılamak üzere yönünü bu alana çeviren Teknikel Makina, uzun yıllar boyunca bölge sanayisinin güvenilir çözüm odağı oldu.</p><p>​6 Şubat Kahramanmaraş depreminde yaşanan ağır kayıplara ve zorluklara rağmen; yarım asrı aşan köklü geçmişinden aldığı güçle yeniden ayağa kalkan firmamız, bugün 'Beyli Makina Sanayi ve Ticaret' adıyla kurumsallaşmıştır. Dünden bugüne taşınan ustalığı, birikimi ve sarsılmaz üretim azmiyle sanayimiz için kaliteden ödün vermeden üretime devam etmektedir. Bu ustalığımız ve tecrübemizle büyümeye ve üretime sonuna kadar devam edeceğiz.</p>",
+            "in_nav": true,
+            "nav_order": 10,
+            "hero_image": "/images/uploads/20260810_134457_067077a5.jpg",
+            "hero_focus": "51% 56%"
+        },
+        {
+            "slug": "blog",
+            "title": "Blog",
+            "hero_tag": "Beyli Makina Blog",
+            "hero_subtitle": "",
+            "html": "<h2><span style=\"color: rgb(0, 0, 0);\">Endüstriyel İmalatta Doğru Makine Seçimi: Verimliliği ve Ömrü Artıran 5 Temel Kriter</span></h2><p><br></p><p><br></p><p>İmalat ve üretim sektöründe faaliyet gösteren tesisler için makine parkuru, işletmenin kalbi niteliğindedir. Yanlış ekipman seçimi yalnızca ilk yatırım maliyetini artırmakla kalmaz; duruş süreleri, yüksek bakım giderleri ve düşük ürün kalitesi gibi uzun vadeli zararlara yol açar. Beyli Makina olarak, imalat süreçlerinizde maksimum performans ve kesintisiz üretim sağlamanız için makine yatırımı yaparken dikkat etmeniz gereken temel kriterleri derledik.</p><p><br></p><h3>1. İşleme Hassasiyeti ve Tolerans Değerleri</h3><p>Üretim hatlarında milimetrik sapmalar dahi ciddi tolerans hatalarına ve fire oranlarının artmasına neden olur. Tercih edilecek makinenin rijit gövde yapısına sahip olması, yüksek devirlerde dahi titreşimi minimuma indirmesi ve uzun süreli çalışmalarda hassasiyetini koruyabilmesi gerekir.</p><p><br></p><h3>2. Malzeme Kalitesi ve Gövde Dayanımı</h3><p>Bir makinenin kullanım ömrünü belirleyen en kritik unsur, imalatında kullanılan malzeme kalitesidir. Ağır sanayi şartlarına, ısı değişimlerine ve mekanik sürtünmelere dayanıklı çelik konstrüksiyon veya döküm gövdeler; tezgahın esnemesini önleyerek arıza riskini minimize eder.</p><p><br></p><h3>3. Enerji Verimliliği ve İşletme Maliyetleri</h3><p>Makine alırken yalnızca satın alma maliyetine değil, toplam sahip olma maliyetine (TCO) odaklanılmalıdır. Yeni nesil motor teknolojileri ve sürücü sistemleri kullanan makineler, elektrik tüketimini ciddi oranda düşürerek uzun vadede kendisini amorti eder.</p><p><br></p><h3>4. Bakım Kolaylığı ve Yedek Parça Erişimi</h3><p>En gelişmiş makine dahi periyodik bakıma ihtiyaç duyar. İmalat hattının uzun süre durmaması için:</p><p><br></p><ul><li>Mimarinin servis müdahalesine uygun tasarlanmış olması,</li><li>Aşınan parçaların standart ve kolay temin edilebilir bulunması,</li><li>Yerli ve hızlı teknik destek ağının mevcudiyeti hayati önem taşır.</li></ul><h3>5. Otomasyon Uyumluluğu ve Esneklik</h3><p>Gelişen üretim teknolojileri doğrultusunda, satın alınacak sistemlerin mevcut otomasyon hatlarına entegre edilebilir olması gerekir. Modüler tasarıma sahip sistemler, ilerleyen dönemdeki kapasite artışlarına veya farklı ürün tiplerine kolayca adapte edilebilir.</p><p><strong>Sonuç</strong></p><p>Doğru makine tercihi, fabrikanızın rekabet gücünü doğrudan belirler. İmalat süreçlerinize en uygun, yüksek hassasiyetli ve uzun ömürlü mühendislik çözümleri için&nbsp;<strong>Beyli Makina</strong>&nbsp;uzman ekibiyle iletişime geçebilir, projeleriniz için teknik danışmanlık alabilirsiniz.</p>",
+            "in_nav": true,
+            "nav_order": 20,
+            "hero_image": "",
+            "hero_focus": ""
+        },
+        {
+            "slug": "kvkk-aydinlatma-metni",
+            "title": "KVKK Aydınlatma Metni",
+            "hero_tag": "Yasal Bilgilendirme",
+            "hero_subtitle": "Kişisel verilerinizin hangi amaçla işlendiği, ne kadar saklandığı ve haklarınız.",
+            "hero_image": "",
+            "hero_focus": "",
+            "html": "<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (&ldquo;KVKK&rdquo;) uyarınca, beylimakina.com adresindeki teklif formu üzerinden paylaştığınız kişisel veriler, veri sorumlusu olarak Beyli Makina Sanayi ve Ticaret Limited Şirketi tarafından aşağıda açıklanan kapsamda işlenmektedir.</p>\n<h2>1. Veri Sorumlusu</h2>\n<ul>\n<li><strong>Ünvan:</strong> Beyli Makina Sanayi ve Ticaret Limited Şirketi</li>\n<li><strong>Adres:</strong> Yavuz Selim Mah., Tornacılar Cd. No:61, 46080 Onikişubat / Kahramanmaraş</li>\n<li><strong>Telefon:</strong> 0344 236 32 32</li>\n<li><strong>E-posta:</strong> beyli@beylimakina.com</li>\n<li><strong>İnternet sitesi:</strong> https://www.beylimakina.com</li>\n<li><strong>Vergi Dairesi / No:</strong> Aksu Vergi Dairesi / 1671367463</li>\n</ul>\n<h2>2. İşlenen Kişisel Veriler</h2>\n<p>Teklif formunu doldurmanız halinde yalnızca aşağıdaki veriler işlenir:</p>\n<ul>\n<li><strong>Kimlik verisi:</strong> ad, soyad; şahıs firması olarak talep iletiyorsanız beyan ettiğiniz vergi kimlik numarası.</li>\n<li><strong>İletişim verisi:</strong> ülke kodlu telefon numarası, e-posta adresi, ülke, il, ilçe ve açık adres.</li>\n<li><strong>Firma verisi:</strong> firma ünvanı, vergi dairesi, vergi kimlik numarası, görev/departman bilgisi, firma internet sitesi, satınalma sipariş numarası.</li>\n<li><strong>Talep verisi:</strong> parça veya hizmet türü, ilgili ürün, sipariş açıklaması, tahmini adet, istenen termin ve forma yüklediğiniz teknik resim/dosyalar.</li>\n<li><strong>İşlem güvenliği verisi:</strong> form gönderim tarih ve saati.</li>\n</ul>\n<p>Formda sağlık, inanç, biyometrik veri gibi özel nitelikli kişisel veri talep edilmez. Lütfen açıklama alanına bu tür bilgiler yazmayınız.</p>\n<h2>3. İşleme Amaçları</h2>\n<ul>\n<li>Teklif talebinizin alınması, değerlendirilmesi ve fiyat teklifi hazırlanması</li>\n<li>Talebiniz hakkında sizinle iletişime geçilmesi</li>\n<li>Sözleşme kurulması halinde sipariş, üretim, sevkiyat ve faturalama süreçlerinin yürütülmesi</li>\n<li>Vergi, ticaret ve muhasebe mevzuatından doğan yükümlülüklerin yerine getirilmesi</li>\n<li>Talep ve şikâyetlerin takibi ile hukuki uyuşmazlıklarda savunma hakkının kullanılması</li>\n</ul>\n<p>Kişisel verileriniz, pazarlama amacıyla üçüncü kişilere satılmaz, kiralanmaz veya devredilmez.</p>\n<h2>4. Hukuki Sebepler (KVKK m.5)</h2>\n<ul>\n<li><strong>m.5/2-c:</strong> Sözleşmenin kurulması veya ifası için veri işlemenin zorunlu olması (teklif hazırlığı ve sipariş süreci)</li>\n<li><strong>m.5/2-ç:</strong> Hukuki yükümlülüğün yerine getirilmesi (fatura ve vergi mevzuatı)</li>\n<li><strong>m.5/2-e:</strong> Bir hakkın tesisi, kullanılması veya korunması</li>\n<li><strong>m.5/2-f:</strong> Meşru menfaat (talep kayıtlarının tutulması ve form güvenliği)</li>\n</ul>\n<h2>5. Toplama Yöntemi</h2>\n<p>Veriler, beylimakina.com adresindeki teklif formunu doldurup göndermeniz suretiyle elektronik ortamda, kısmen otomatik yollarla toplanır. Formu doldurmadığınız sürece site üzerinden kişisel veriniz toplanmaz.</p>\n<h2>6. Aktarım</h2>\n<p>Verileriniz, yukarıdaki amaçlarla sınırlı olarak;</p>\n<ul>\n<li>internet sitesi ve e-posta altyapımızı sağlayan yurt içi barındırma tedarikçimize (Natro Bilgi İletişim Teknolojileri (yurt içi sunucu)),</li>\n<li>mali müşavirlik ve muhasebe hizmeti aldığımız yetkili meslek mensubuna (yalnızca siparişe dönüşen ve faturalanan talepler için),</li>\n<li>sipariş halinde sevkiyatı yapan kargo/lojistik firmasına,</li>\n<li>talep halinde yetkili kamu kurum ve kuruluşlarına</li>\n</ul>\n<p>aktarılabilir. Bunun dışında yurt içinde veya yurt dışında herhangi bir üçüncü kişiye aktarım yapılmaz.</p>\n<h2>7. Saklama Süresi</h2>\n<ul>\n<li>Siparişe dönüşmeyen teklif talepleri: son yazışmadan itibaren 2 yıl</li>\n<li>Siparişe dönüşen kayıtlar ve fatura bilgileri: ilgili mevzuat gereği 10 yıl (Vergi Usul Kanunu ve Türk Ticaret Kanunu)</li>\n</ul>\n<p>Süre sonunda kişisel veriler silinir, yok edilir veya anonim hale getirilir.</p>\n<h2>8. İlgili Kişi Olarak Haklarınız (KVKK m.11)</h2>\n<p>Veri sorumlusuna başvurarak;</p>\n<ul>\n<li>kişisel verinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme,</li>\n<li>işleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>\n<li>yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>\n<li>eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>\n<li>şartları oluştuğunda silinmesini veya yok edilmesini isteme,</li>\n<li>düzeltme, silme ve yok etme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>\n<li>otomatik sistemlerle yapılan analiz sonucu aleyhinize bir sonuç doğarsa buna itiraz etme,</li>\n<li>hukuka aykırı işleme nedeniyle zarara uğramanız halinde zararın giderilmesini talep etme</li>\n</ul>\n<p>haklarına sahipsiniz.</p>\n<p>Taleplerinizi <strong>beyli@beylimakina.com</strong> adresine e-posta ile veya <strong>Yavuz Selim Mah., Tornacılar Cd. No:61, 46080 Onikişubat / Kahramanmaraş</strong> adresine kimliğinizi tevsik edici belgelerle yazılı olarak iletebilirsiniz. Başvurunuz en kısa sürede ve en fazla 30 gün içinde ücretsiz olarak yanıtlanır; işlemin ayrıca bir maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret talep edilebilir.</p>\n<p><em>Son güncelleme: 16.09.2026</em></p>",
+            "in_nav": false,
+            "nav_order": 30,
+            "nav_group": ""
+        },
+        {
+            "slug": "gizlilik-politikasi",
+            "title": "Gizlilik Politikası",
+            "hero_tag": "Yasal Bilgilendirme",
+            "hero_subtitle": "Sitemizde hangi bilgilerin toplandığı ve nasıl korunduğu.",
+            "hero_image": "",
+            "hero_focus": "",
+            "html": "<p>Beyli Makina Sanayi ve Ticaret Limited Şirketi olarak, beylimakina.com adresini ziyaret eden ve teklif formu aracılığıyla bizimle iletişime geçen kişilerin bilgilerinin gizliliğine önem veriyoruz. Bu politika, sitemizde hangi bilgilerin toplandığını ve nasıl korunduğunu açıklar.</p>\n<h2>1. Hangi Bilgileri Topluyoruz?</h2>\n<p>Sitemizi yalnızca gezerek kullandığınızda kişisel bilgilerinizi toplamayız. Üyelik sistemi bulunmaz, hesap oluşturmanız gerekmez.</p>\n<p>Yalnızca <strong>teklif formunu</strong> doldurup gönderdiğinizde, formda beyan ettiğiniz iletişim ve talep bilgileri tarafımıza ulaşır. Bu bilgilerin ayrıntılı dökümü, işleme amaçları ve saklama süreleri KVKK Aydınlatma Metni sayfamızda yer alır.</p>\n<h2>2. Bilgileri Ne İçin Kullanıyoruz?</h2>\n<p>Paylaştığınız bilgiler yalnızca talebinizi değerlendirmek, size teklif hazırlamak ve konuyla ilgili sizinle iletişime geçmek için kullanılır. Onayınız olmadan tanıtım veya reklam amaçlı ileti göndermeyiz.</p>\n<h2>3. Bilgileri Kimlerle Paylaşıyoruz?</h2>\n<p>Bilgileriniz üçüncü kişilere satılmaz, kiralanmaz veya pazarlama amacıyla devredilmez. Yalnızca hizmetin yürütülmesi için zorunlu olan tedarikçilerimizle (barındırma sağlayıcısı, mali müşavir, sipariş halinde kargo firması) ve yasal zorunluluk halinde yetkili kamu kurumlarıyla paylaşılır.</p>\n<h2>4. Bilgilerinizi Nasıl Koruyoruz?</h2>\n<ul>\n<li>Site tamamı HTTPS (SSL) üzerinden yayınlanır; form gönderimleri şifreli iletilir.</li>\n<li>Yönetim paneline erişim şifre korumalıdır; hatalı giriş denemeleri sınırlandırılır ve kayıt altına alınır.</li>\n<li>Form eklerinde yalnızca izin verilen dosya türleri kabul edilir ve dosyalar sunucuda çalıştırılamaz biçimde saklanır.</li>\n<li>Verilere yalnızca talebinizi değerlendirmekle görevli çalışanlarımız, işini yapabilmek için gereken ölçüde erişir.</li>\n</ul>\n<h2>5. Haklarınız</h2>\n<p>Kişisel verilerinize erişme, düzeltilmesini veya silinmesini isteme haklarınız bulunmaktadır. Talepleriniz için <strong>beyli@beylimakina.com</strong> adresine yazabilirsiniz. Haklarınızın tam listesi ve başvuru usulü KVKK Aydınlatma Metni sayfamızda açıklanmıştır.</p>\n<h2>6. Değişiklikler</h2>\n<p>Bu politika gerektiğinde güncellenir. Güncel metin her zaman bu sayfada yayımlanır.</p>\n<p><em>Son güncelleme: 16.09.2026</em></p>",
+            "in_nav": false,
+            "nav_order": 40,
+            "nav_group": ""
+        },
+        {
+            "slug": "cerez-politikasi",
+            "title": "Çerez Politikası",
+            "hero_tag": "Yasal Bilgilendirme",
+            "hero_subtitle": "Sitemizde kullanılan çerezler ve bunları yönetme yolları.",
+            "hero_image": "",
+            "hero_focus": "",
+            "html": "<p>Bu metin, beylimakina.com adresinde kullanılan çerezler hakkında sizi bilgilendirmek için hazırlanmıştır.</p>\n<h2>1. Çerez Nedir?</h2>\n<p>Çerez (cookie), bir internet sitesini ziyaret ettiğinizde tarayıcınıza kaydedilen küçük bir metin dosyasıdır. Siteler, çerezler sayesinde ziyaretiniz boyunca yaptığınız işlemleri hatırlar.</p>\n<h2>2. Sitemizde Hangi Çerezler Kullanılıyor?</h2>\n<p>Sitemizde <strong>yalnızca zorunlu (teknik) çerez</strong> kullanılmaktadır:</p>\n<ul>\n<li><strong>Oturum çerezi:</strong> Teklif formunu doldurduğunuzda, form gönderildikten sonra sonuç mesajının gösterilmesi ve hata olması halinde yazdıklarınızın kaybolmaması için kullanılır. Ayrıca formun kötüye kullanımını (kısa aralıkla çok sayıda gönderim) engeller. Bu çerez tarayıcınızı kapattığınızda silinir ve kimliğinizi tespit etmek için kullanılmaz.</li>\n<li><strong>Yönetim paneli oturum çerezi:</strong> Yalnızca site yöneticisi panele giriş yaptığında oluşur; ziyaretçileri ilgilendirmez.</li>\n</ul>\n<p>Sitemizde reklam çerezi, takip pikseli, sosyal medya izleme kodu veya ziyaretçi davranışı ölçen analiz çerezi <strong>bulunmamaktadır</strong>. Bu nedenle sitemizde çerez izni istenmez; zorunlu çerezler, hizmetin sunulabilmesi için gerekli olduğundan açık rıza şartına tabi değildir.</p>\n<h2>3. Çerezleri Nasıl Yönetebilirsiniz?</h2>\n<p>Tarayıcınızın ayarlar bölümünden çerezleri silebilir veya engelleyebilirsiniz. Zorunlu çerezleri engellemeniz halinde teklif formu düzgün çalışmayabilir; sitenin diğer bölümlerini gezmeye devam edebilirsiniz.</p>\n<h2>4. Değişiklikler</h2>\n<p>İleride ziyaretçi istatistiği veya reklam ölçümü amacıyla çerez kullanılması halinde bu metin güncellenecek ve mevzuatın gerektirdiği şekilde ayrıca onayınız istenecektir.</p>\n<p>Sorularınız için: <strong>beyli@beylimakina.com</strong></p>\n<p><em>Son güncelleme: 16.09.2026</em></p>",
+            "in_nav": false,
+            "nav_order": 50,
+            "nav_group": ""
+        },
+        {
+            "slug": "kurumsal-bilgiler",
+            "title": "Kurumsal Bilgiler",
+            "hero_tag": "Kurumsal",
+            "hero_subtitle": "Ticari ünvan, vergi bilgileri, iletişim ve çalışma saatleri.",
+            "hero_image": "",
+            "hero_focus": "",
+            "html": "<p>Beyli Makina, Kahramanmaraş&rsquo;ta faaliyet gösteren; talaşlı imalat, CNC işleme ve makine parçası üretimi alanında hizmet veren bir sanayi kuruluşudur. Tedarikçi kaydı, sözleşme ve fatura işlemleriniz için firma bilgilerimiz aşağıdadır.</p>\n<h2>Firma Bilgileri</h2>\n<ul>\n<li><strong>Ticari Ünvan:</strong> Beyli Makina Sanayi ve Ticaret Limited Şirketi</li>\n<li><strong>Vergi Dairesi:</strong> Aksu Vergi Dairesi</li>\n<li><strong>Vergi Kimlik No:</strong> 1671367463</li>\n<li><strong>Faaliyet Konusu:</strong> Talaşlı imalat, CNC torna ve işleme, makine parçası üretimi</li>\n</ul>\n<h2>İletişim</h2>\n<ul>\n<li><strong>Adres:</strong> Yavuz Selim Mah., Tornacılar Cd. No:61, 46080 Onikişubat / Kahramanmaraş</li>\n<li><strong>Telefon:</strong> 0344 236 32 32</li>\n<li><strong>E-posta:</strong> beyli@beylimakina.com</li>\n<li><strong>İnternet sitesi:</strong> https://www.beylimakina.com</li>\n</ul>\n<h2>Çalışma Saatleri</h2>\n<ul>\n<li>Pazartesi &ndash; Cuma: 08.30 &ndash; 18.00</li>\n<li>Cumartesi: 08.30 &ndash; 13.00</li>\n<li>Pazar: Kapalı</li>\n</ul>\n<h2>Teklif ve Sipariş</h2>\n<p>Teknik resminizi ve talebinizi teklif formu üzerinden iletebilirsiniz. Kurumsal talepler için formdaki &ldquo;Kurumsal&rdquo; sekmesini kullanarak firma ve fatura bilgilerinizi eksiksiz iletmeniz, teklif sürecini hızlandırır.</p>\n<h2>Yasal Bilgilendirme</h2>\n<ul>\n<li>Kişisel verilerin işlenmesi: KVKK Aydınlatma Metni</li>\n<li>Gizlilik uygulamalarımız: Gizlilik Politikası</li>\n<li>Çerez kullanımı: Çerez Politikası</li>\n</ul>",
+            "in_nav": false,
+            "nav_order": 60,
+            "nav_group": ""
+        }
+    ],
+    "labels": {
+        "home.services.text": "Mühendislik altyapımızla uçtan uca imalat çözümleri sunuyoruz.",
+        "service.machines_tag": "Ürettiğimiz Makineler",
+        "form.parttype": "Parça/Ürün Türü",
+        "form.submit": "Teklif Talebini Gönder"
+    },
+    "page_heroes": {
+        "urunler": {
+            "image": "/images/uploads/hcme-warehouse-5-20260811_164700_57cd2d.jpg",
+            "focus": "50% 50%"
+        }
+    },
+    "drawer": {
+        "cta_text": "Teklif Al",
+        "cta_link": "/teklif",
+        "buttons": [
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_113858_d08a65.png",
+                "label": "Whatsapp",
+                "text": "0533 559 87 01",
+                "type": "link",
+                "value": "https://wa.me/905335598701"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_161352_ad082a.png",
+                "label": "",
+                "text": "E-Posta",
+                "type": "mail",
+                "value": "beyli@beylimakina.com"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_161905_5f9b2e.png",
+                "label": "",
+                "text": "Konumu Gör",
+                "type": "link",
+                "value": "https://maps.app.goo.gl/1PdTvDTCfzaojur79"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_114159_bf2ac0.png",
+                "label": "Telefon Numarası",
+                "text": "03442363232",
+                "type": "tel",
+                "value": "+903442363232"
+            }
+        ]
+    },
+    "footer": {
+        "headings": {
+            "links": "",
+            "services": "",
+            "contact": "",
+            "legal": "Yasal Bilgilendirme"
+        },
+        "quick_links": [
+            {
+                "icon": "",
+                "image": "",
+                "label": "Ana Sayfa",
+                "text": "Ana Sayfa",
+                "type": "link",
+                "value": "/"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "Hakkımızda",
+                "text": "Hakkımızda",
+                "type": "link",
+                "value": "/hakkimizda"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "Blog",
+                "text": "Blog",
+                "type": "link",
+                "value": "/blog"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "İletişim",
+                "text": "İletişim",
+                "type": "link",
+                "value": "/teklif"
+            }
+        ],
+        "social_buttons": [
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_162236_f337b0.png",
+                "label": "E-Posta",
+                "text": "E-Posta",
+                "type": "mail",
+                "value": "beyli@beylimakina.com"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_113858_d08a65.png",
+                "label": "Whatsapp",
+                "text": "Whatsapp",
+                "type": "link",
+                "value": "https://wa.me/905333403285"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_163043_63dfdc.png",
+                "label": "Konumu Gör",
+                "text": "Konumu Gör",
+                "type": "link",
+                "value": "https://maps.app.goo.gl/1PdTvDTCfzaojur79"
+            },
+            {
+                "icon": "",
+                "image": "/images/uploads/site-logolari/20260811_163446_7e2fc0.png",
+                "label": "",
+                "text": "+90344 236 32 32",
+                "type": "tel",
+                "value": "+903442363232"
+            }
+        ],
+        "legal_links": [
+            {
+                "icon": "",
+                "image": "",
+                "label": "KVKK Aydınlatma Metni",
+                "text": "KVKK Aydınlatma Metni",
+                "type": "link",
+                "value": "/kvkk-aydinlatma-metni"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "Gizlilik Politikası",
+                "text": "Gizlilik Politikası",
+                "type": "link",
+                "value": "/gizlilik-politikasi"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "Çerez Politikası",
+                "text": "Çerez Politikası",
+                "type": "link",
+                "value": "/cerez-politikasi"
+            },
+            {
+                "icon": "",
+                "image": "",
+                "label": "Kurumsal Bilgiler",
+                "text": "Kurumsal Bilgiler",
+                "type": "link",
+                "value": "/kurumsal-bilgiler"
+            }
+        ]
+    },
+    "floating_buttons": {
+        "enabled": 1,
+        "position": "right",
+        "style": "circle",
+        "pulse_animation": 1,
+        "mobile_icon_only": 1,
+        "whatsapp_enabled": 1,
+        "whatsapp_number": "905335598701",
+        "whatsapp_text": "WhatsApp",
+        "whatsapp_message": "",
+        "phone_enabled": 0,
+        "phone_number": "+905335598701",
+        "phone_text": "Hemen Arayın",
+        "custom_buttons": []
+    }
+}

@@ -1,0 +1,457 @@
+{
+    "site": {
+        "phone_display": "+90 (5XX) XXX XX XX",
+        "phone_link": "+905XXXXXXXXX",
+        "whatsapp_link": "https://wa.me/905XXXXXXXXX",
+        "email": "siparis@beylimakina.com",
+        "address": "Kahramanmaraş Organize Sanayi Bölgesi",
+        "linkedin_link": "#",
+        "footer_note": "© 2026 Beyli Makina Sanayi ve Ticaret Ltd. Şti. | Tüm hakları saklıdır.",
+        "footer_about": "Kahramanmaraş Organize Sanayi Bölgesi'nde hassas CNC torna ve freze imalatı. Prototipten seri üretime esnek çözümler."
+    },
+    "menu": {
+        "urunler_label": "Ürünlerimiz",
+        "urunler_items": [
+            {
+                "label": "Torna Parçaları",
+                "link": "index.php#katalog"
+            },
+            {
+                "label": "Freze Parçaları",
+                "link": "index.php#katalog"
+            },
+            {
+                "label": "Flanş & Bağlantı Elemanları",
+                "link": "index.php#katalog"
+            }
+        ],
+        "hizmetler_label": "Hizmetlerimiz",
+        "hizmetler_items": [
+            {
+                "label": "CNC Torna",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "CNC Freze",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "Mühendislik & Tasarım",
+                "link": "index.php#hizmetler"
+            },
+            {
+                "label": "Prototip & Seri Üretim",
+                "link": "index.php#hizmetler"
+            }
+        ]
+    },
+    "hero": {
+        "tag": "",
+        "title_before": "Geleceği",
+        "title_highlight": "CNC Torna & Freze",
+        "title_after": "ile Şekillendiriyoruz",
+        "subtitle": "Makine mühendisliği titizliği ve son teknoloji CNC tezgahlarıyla, mikron hassasiyetinde parça üretimi sunuyoruz.",
+        "cta1_text": "Ürün Kataloğunu Gör →",
+        "cta1_link": "index.php#katalog",
+        "cta2_text": "Özel Sipariş Ver",
+        "cta2_link": "/teklif",
+        "stats": [],
+        "tag_link": ""
+    },
+    "about_teaser": {
+        "tag": "Hakkımızda",
+        "title": "Beyli Makina Hakkında",
+        "html": "<p>Kahramanmaraş Organize Sanayi Bölgesi'nde faaliyet gösteren Beyli Makina, makine mühendisliği bilgi birikimini CNC torna ve freze tezgahlarındaki tecrübeyle birleştirerek sanayiye hassas parça üretimi sunar.</p><p>Küçük adetli özel imalattan seri üretime kadar müşteri ihtiyaçlarına uygun çözümler üretiyoruz.</p>",
+        "stats": [
+            {
+                "num": "60+",
+                "label": "Yıl Tecrübe"
+            },
+            {
+                "num": "500+",
+                "label": "Tamamlanan Proje"
+            },
+            {
+                "num": "%100",
+                "label": "Yerli Üretim"
+            }
+        ],
+        "visual_emoji": "🏭",
+        "visual_image": "",
+        "link_text": "Hakkımızda Devamını Oku →",
+        "link_target": "hakkimizda"
+    },
+    "services": [
+        {
+            "slug": "cnc-torna",
+            "icon": "🖥️",
+            "title": "CNC Torna",
+            "desc": "Silindirik parcalarin hassas torna islemleri",
+            "sort_order": 10,
+            "has_page": true,
+            "hero_tag": "Makine Parkurumuz",
+            "hero_subtitle": "Kaydedilmis alt metin",
+            "image": "/images/uploads/20260807_174127_68372160.jpg",
+            "html": "<h2>Torna Atolyemiz</h2><p>kayitli tanitim metni</p>",
+            "stats": [
+                {
+                    "num": "12",
+                    "label": "Uzman Personel"
+                },
+                {
+                    "num": "6",
+                    "label": "CNC Torna Tezgahi"
+                }
+            ],
+            "machines": [
+                {
+                    "name": "Goodway GS-260",
+                    "emoji": "🌀",
+                    "image": "",
+                    "desc": "Yuksek hassasiyetli torna",
+                    "specs": [
+                        [
+                            "Ayna Kapasitesi",
+                            "Ø320 mm"
+                        ],
+                        [
+                            "Punta Mesafesi",
+                            "750 mm"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "cnc-freze",
+            "icon": "🔲",
+            "title": "CNC Freze",
+            "desc": "3 ve 4 eksen freze tezgahlarında karmaşık kalıp ve parça imalatı.",
+            "sort_order": 20,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "3 ve 4 eksen freze tezgahlarında karmaşık kalıp ve parça imalatı.",
+            "image": "",
+            "html": "<p>Bu hizmetin tanıtım metnini yönetim panelinden düzenleyebilirsiniz.</p>",
+            "stats": [],
+            "machines": []
+        },
+        {
+            "slug": "makine-muhendisligi-tasarim",
+            "icon": "📐",
+            "title": "Makine Mühendisliği & Tasarım",
+            "desc": "Teknik çizimden üretime, mühendislik destekli parça geliştirme süreci.",
+            "sort_order": 30,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Teknik çizimden üretime, mühendislik destekli parça geliştirme süreci.",
+            "image": "",
+            "html": "<p>Bu hizmetin tanıtım metnini yönetim panelinden düzenleyebilirsiniz.</p>",
+            "stats": [],
+            "machines": []
+        },
+        {
+            "slug": "prototip-seri-uretim",
+            "icon": "🛠️",
+            "title": "Prototip & Seri Üretim",
+            "desc": "Tekli prototipten yüksek adetli seri üretime kadar esnek kapasite.",
+            "sort_order": 40,
+            "has_page": true,
+            "hero_tag": "Hizmetlerimiz",
+            "hero_subtitle": "Tekli prototipten yüksek adetli seri üretime kadar esnek kapasite.",
+            "image": "",
+            "html": "<p>Bu hizmetin tanıtım metnini yönetim panelinden düzenleyebilirsiniz.</p>",
+            "stats": [],
+            "machines": []
+        }
+    ],
+    "catalog": [
+        {
+            "cat": "torna",
+            "cat_label": "Torna",
+            "title": "Miller Şaft (Ø40)",
+            "emoji": "⚙️",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Çelik (St 52)"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Sertleştirme"
+                ],
+                [
+                    "Üretim Süresi",
+                    "3-5 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "flans",
+            "cat_label": "Flanş",
+            "title": "Bağlantı Flanşı",
+            "emoji": "🔩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Paslanmaz Çelik 304"
+                ],
+                [
+                    "Tolerans",
+                    "±0.03 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Eloksal"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-4 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "freze",
+            "cat_label": "Freze",
+            "title": "Kalıp Gövdesi",
+            "emoji": "🧩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Alüminyum 7075"
+                ],
+                [
+                    "Tolerans",
+                    "±0.015 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Kumlama"
+                ],
+                [
+                    "Üretim Süresi",
+                    "5-7 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "torna",
+            "cat_label": "Torna",
+            "title": "Dişli Göbeği",
+            "emoji": "⚙️",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Bronz"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Parlatma"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-3 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "freze",
+            "cat_label": "Freze",
+            "title": "Adaptör Plakası",
+            "emoji": "🔲",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Çelik (Ck45)"
+                ],
+                [
+                    "Tolerans",
+                    "±0.02 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Siyah Oksit"
+                ],
+                [
+                    "Üretim Süresi",
+                    "3-4 gün"
+                ]
+            ]
+        },
+        {
+            "cat": "flans",
+            "cat_label": "Flanş",
+            "title": "Boru Rakoru",
+            "emoji": "🔩",
+            "image": "",
+            "specs": [
+                [
+                    "Malzeme",
+                    "Paslanmaz Çelik 316"
+                ],
+                [
+                    "Tolerans",
+                    "±0.025 mm"
+                ],
+                [
+                    "Yüzey İşlemi",
+                    "Pasivasyon"
+                ],
+                [
+                    "Üretim Süresi",
+                    "2-4 gün"
+                ]
+            ]
+        }
+    ],
+    "order_section": {
+        "tag": "Özel Sipariş",
+        "title": "Kişiye Özel Parça Siparişi",
+        "text": "İhtiyacınız olan parçanın teknik çizimini veya bilgilerini iletin, size özel teklif hazırlayalım. Teknik çizim dosyanızı da forma ekleyebilirsiniz.",
+        "side_title": "İletişim",
+        "side_text": "Formu doldurmak yerine doğrudan bize ulaşmak isterseniz:",
+        "form_title": "Teklif Formu",
+        "part_types": [
+            "CNC Torna Parçası",
+            "CNC Freze Parçası",
+            "Flanş / Bağlantı Elemanı",
+            "Diğer / Özel Tasarım"
+        ],
+        "contact_buttons": [
+            {
+                "icon": "📞",
+                "label": "Telefon",
+                "text": "+90 (5XX) XXX XX XX",
+                "type": "tel",
+                "value": "+905XXXXXXXXX"
+            },
+            {
+                "icon": "💬",
+                "label": "WhatsApp",
+                "text": "Mesaj gönder",
+                "type": "link",
+                "value": "https://wa.me/905XXXXXXXXX"
+            },
+            {
+                "icon": "✉️",
+                "label": "E-Posta",
+                "text": "siparis@beylimakina.com",
+                "type": "mail",
+                "value": "beylimakina@beylimakina.com"
+            },
+            {
+                "icon": "📍",
+                "label": "Adres",
+                "text": "Kahramanmaraş Organize Sanayi Bölgesi",
+                "type": "link",
+                "value": "https://share.google/rA2TrtYtVFV97pqnj"
+            }
+        ]
+    },
+    "pages": [
+        {
+            "slug": "hakkimizda",
+            "title": "Hakkımızda",
+            "hero_tag": "Kahramanmaraş OSB",
+            "hero_subtitle": "Makine mühendisliği bilgi birikimini CNC torna ve freze tecrübesiyle birleştiren, Kahramanmaraş Organize Sanayi Bölgesi'nde faaliyet gösteren bir hassas imalat atölyesiyiz.",
+            "html": "<blockquote>Hikayemiz</blockquote><p>Beyli Makina, Kahramanmaraş Organize Sanayi Bölgesi'nde faaliyet gösteren, makine mühendisliği bilgi birikimini CNC torna ve freze tezgahlarındaki tecrübeyle birleştiren bir hassas imalat atölyesidir.</p><p>Küçük adetli özel imalattan seri üretime kadar geniş bir yelpazede, müşterilerimizin teknik çizim ve ihtiyaçlarına uygun parça üretimi gerçekleştiriyoruz. Amacımız, her parçada mühendislik hassasiyetini üretim hızıyla bir araya getirmek.</p><h2>Değerlerimiz</h2><p><strong>Hassasiyet:</strong> ±0.01 mm toleransa kadar inen ölçüm ve işleme hassasiyeti ile her parçada tutarlı kalite.</p><p><strong>Hızlı Teslimat:</strong> Prototipten seri üretime, planlı üretim akışıyla zamanında teslimat.</p><p><strong>Mühendislik Desteği:</strong> Teknik çizim aşamasından itibaren müşteriyle birlikte çalışan mühendislik yaklaşımı.</p><p><strong>Kalite Kontrol:</strong> Üretimin her aşamasında ölçüm ve kontrol ile hatasız parça garantisi.</p>",
+            "in_nav": true,
+            "nav_order": 10
+        },
+        {
+            "slug": "blog",
+            "title": "Blog",
+            "hero_tag": "Beyli Makina Blog",
+            "hero_subtitle": "CNC torna, freze ve malzeme seçimi üzerine paylaşımlar.",
+            "html": "<p><em>Not: Bu içerik örnek/placeholder olarak eklenmiştir — admin panelinden kendi blog yazılarınızla değiştirebilirsiniz.</em></p><h2>CNC Torna İşlemlerinde Tolerans Seçimi</h2><p>Parça toleransının maliyet ve üretim süresine etkisi üzerine kısa bir yazı örneği.</p><h2>Alüminyum mu, Çelik mi? Doğru Malzeme Seçimi</h2><p>Uygulamaya göre malzeme seçim kriterlerini anlatan örnek bir blog yazısı taslağı.</p>",
+            "in_nav": true,
+            "nav_order": 20
+        },
+        {
+            "slug": "deneme",
+            "title": "Deneme",
+            "hero_tag": "",
+            "hero_subtitle": "",
+            "html": "<p>Düzenleme ve Yazılar burda görünür...</p>",
+            "in_nav": true,
+            "nav_order": 30
+        }
+    ],
+    "footer": {
+        "headings": {
+            "links": "Hızlı Linkler",
+            "services": "Hizmetlerimiz",
+            "contact": "İletişim"
+        },
+        "quick_links": [],
+        "social_buttons": [
+            {
+                "icon": "✆",
+                "image": "",
+                "label": "WhatsApp",
+                "text": "WhatsApp",
+                "type": "link",
+                "value": "https://wa.me/905XXXXXXXXX"
+            },
+            {
+                "icon": "✉",
+                "image": "",
+                "label": "E-posta",
+                "text": "E-posta",
+                "type": "mail",
+                "value": "siparis@beylimakina.com"
+            }
+        ]
+    },
+    "drawer": {
+        "cta_text": "Teklif Al",
+        "cta_link": "/teklif",
+        "buttons": [
+            {
+                "icon": "📞",
+                "image": "",
+                "label": "",
+                "text": "+90 (5XX) XXX XX XX",
+                "type": "tel",
+                "value": "+905XXXXXXXXX"
+            },
+            {
+                "icon": "💬",
+                "image": "",
+                "label": "",
+                "text": "WhatsApp'tan yaz",
+                "type": "link",
+                "value": "https://wa.me/905XXXXXXXXX"
+            },
+            {
+                "icon": "✉️",
+                "image": "",
+                "label": "",
+                "text": "siparis@beylimakina.com",
+                "type": "mail",
+                "value": "siparis@beylimakina.com"
+            },
+            {
+                "icon": "📍",
+                "image": "",
+                "label": "",
+                "text": "Kahramanmaraş Organize Sanayi Bölgesi",
+                "type": "text",
+                "value": ""
+            }
+        ]
+    }
+}

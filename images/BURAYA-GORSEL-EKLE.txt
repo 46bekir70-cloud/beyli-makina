@@ -1,0 +1,15 @@
+GÖRSELLER HAKKINDA
+===================
+Bu klasör (images/) şu an boş. Site şu anda gerçek fotoğraf yerine
+emoji ve renkli gradient arka planlar kullanıyor (⚙️ 🔩 🧩 🏭 gibi).
+
+Gerçek fotoğraflarınızı eklemek isterseniz:
+1. Fotoğraflarınızı bu "images" klasörüne yükleyin
+   (örnek isimler: atolye.jpg, parca-1.jpg, logo.png)
+2. İlgili HTML dosyasında (index.html, about.html, blog.html) emoji
+   içeren <div class="part-img">⚙️</div> gibi kutucukları
+   <img src="images/parca-1.jpg" alt="Parça açıklaması"> ile değiştirin.
+3. Görselleri yüklemeden önce sıkıştırmanız (web için optimize etmeniz)
+   sitenin hızlı açılması için önerilir (örn. squoosh.app).
+
+Bu dosyayı silebilirsiniz, sadece bir hatırlatma notudur.

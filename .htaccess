@@ -1,0 +1,185 @@
+# Beyli Makina — güvenlik ve temel ayarlar
+
+# index.php varsa onu önceliklendir
+DirectoryIndex index.php index.html
+
+# Özel 404 hata sayfası yönlendirmesi
+ErrorDocument 404 /sayfa.php?slug=404
+
+# Klasör içeriğinin listelenmesini engelle
+Options -Indexes
+
+# --- SADE (TEMİZ) ADRESLER ---
+# Örn: beylimakina.com/hakkimizda  ->  aslında sayfa.php?slug=hakkimizda çalıştırır
+# ama adres çubuğunda "sayfa.php" hiç görünmez.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # --- TEK ADRES: https://www.beylimakina.com ---
+  # Site 4 ayrı adresten açılıyordu (http/https, www'lu ve www'suz). İki sorun:
+  #  1) http üzerinden gelen ziyaretçi şifresiz bağlantıda kalıyor, teklif
+  #     formuna ad/telefon/dosya girerken tarayıcı "güvenli değil" diyor.
+  #  2) Google aynı sayfayı 4 farklı adres sanıyor, sıralama gücü bölünüyor.
+  # Kurallar yalnızca beylimakina.com için çalışır; localhost etkilenmez.
+  # X-Forwarded-Proto kontrolü Plesk'in nginx katmanı için: o olmadan
+  # sonsuz yönlendirme döngüsü oluşabiliyor.
+  RewriteCond %{HTTP_HOST} beylimakina\.com$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://www.beylimakina.com%{REQUEST_URI} [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^beylimakina\.com$ [NC]
+  RewriteRule ^ https://www.beylimakina.com%{REQUEST_URI} [R=301,L]
+
+  # /index.php yazılırsa sade / adresine yönlendir (Google için de daha temiz)
+  RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+  RewriteRule ^index\.php$ / [R=301,L]
+
+  # Site haritası. Arama motorları /sitemap.xml adresini arıyor; içeriği
+  # sitemap.php ürün veritabanından anlık üretiyor.
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+  # Ürün kataloğu. Bu iki kural CMS sayfa kuralından ÖNCE gelmeli; aksi halde
+  # /urunler adresi sayfa.php'ye düşer ve "Sayfa Bulunamadı" verir.
+  RewriteRule ^urunler/?$ urunler.php [L,QSA]
+  RewriteRule ^urun/([a-zA-Z0-9_-]+)/?$ urun.php?slug=$1 [L,QSA]
+
+  # Blog / makaleler. /blog adresi eskiden sayfa.php'ye düşüyordu; artık
+  # makale listesini basan blog.php karşılıyor — sayfanın üst bandı (başlık,
+  # görsel, giriş yazısı) yine Sayfalar ekranındaki "Blog" kaydından geliyor.
+  RewriteRule ^(blog|makaleler)/?$ blog.php [L,QSA]
+  RewriteRule ^makale/([a-zA-Z0-9_-]+)/?$ makale.php?slug=$1 [L,QSA]
+
+  # Teklif / iletişim sayfası
+  RewriteRule ^teklif/?$ teklif.php [L,QSA]
+
+  # Hizmet detay sayfaları
+  RewriteRule ^hizmet/([a-zA-Z0-9_-]+)/?$ hizmet.php?slug=$1 [L,QSA]
+
+  # Gerçek dosya/klasör değilse ve admin/css/js/images/content/inc değilse
+  # -> sayfa.php?slug=... olarak içeri yönlendir (kullanıcı bunu görmez)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/(teknikel|css|js|images|content|inc)(/|$)
+  RewriteRule ^([a-zA-Z0-9_-]+)/?$ sayfa.php?slug=$1 [L,QSA]
+</IfModule>
+
+# NOT: Yükleme klasöründe kod çalıştırmayı engelleyen kural burada DEĞİL,
+# images/uploads/.htaccess içinde. Kök dizine yazılırsa index.php dahil tüm
+# siteyi kapatır.
+
+# İçerik/kimlik bilgisi JSON dosyalarına doğrudan tarayıcıdan erişimi engelle
+# (PHP dosyaları sunucu tarafında bu dosyaları normal şekilde okuyabilir, bu kural
+# sadece tarayıcıdan doğrudan "site.com/content/content.json" gibi bir istek gelirse devreye girer)
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.json$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <FilesMatch "\.json$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+</IfModule>
+
+
+# ============================================================
+#  GÜVENLİK BAŞLIKLARI
+#  Tarayıcıya "bu siteyi nasıl ele alacaksın" talimatı verir. Kurumsal
+#  müşterilerin güvenlik taramalarında ilk bakılan yer burası.
+# ============================================================
+<IfModule mod_headers.c>
+  # Tarayıcı dosya türünü "tahmin" etmesin (yüklenen dosyalarda önemli)
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Site başka bir sayfanın içine çerçeveyle gömülemez (clickjacking).
+  # Panel önizlemesi aynı alan adından yüklendiği için SAMEORIGIN şart.
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Başka siteye geçerken hangi adresten geldiğimizi tam olarak söylemesin
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Kullanılmayan cihaz izinlerini kapat
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+
+  # Tarayıcı, alan adına 6 ay boyunca yalnızca https ile gelsin.
+  # SSL sertifikası hep açık kalmalı (Plesk > Let's Encrypt otomatik yeniliyor).
+  Header always set Strict-Transport-Security "max-age=15552000" env=HTTPS
+
+  # Sunucu/PHP sürümünü yayınlama
+  Header always unset X-Powered-By
+  Header unset X-Powered-By
+</IfModule>
+
+# ============================================================
+#  AÇIKTA KALMAMASI GEREKEN DOSYA TÜRLERİ
+#  Kurulum notları, yedekler, log ve veritabanı dökümleri tarayıcıdan
+#  okunamaz. robots.txt bilinçli olarak HARİÇ — onun herkese açık olması
+#  gerekiyor, arama motorları o dosyayı okuyor.
+# ============================================================
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.(txt|md|log|sql|bak|old|ini|yml|yaml|sh|zip|rar|tar|gz|7z)$">
+    Require all denied
+  </FilesMatch>
+  <Files "robots.txt">
+    Require all granted
+  </Files>
+  <Files "google2b704d23cbccd3dd.html">
+    Require all granted
+  </Files>
+  # Veritabanı kurulum dosyası: sunucudan silinmesi gerekiyor, silinene kadar
+  # tarayıcıdan açılamasın.
+  <Files "veritabani-kurulum.php">
+    Require all denied
+  </Files>
+  # .env, .git gibi nokta ile başlayan dosyalar
+  <FilesMatch "^\.">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <FilesMatch "\.(txt|md|log|sql|bak|old|ini|yml|yaml|sh|zip|rar|tar|gz|7z)$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+  <Files "robots.txt">
+    Order allow,deny
+    Allow from all
+  </Files>
+  <Files "veritabani-kurulum.php">
+    Order allow,deny
+    Deny from all
+  </Files>
+</IfModule>
+
+# ============================================================
+#  HIZ: SIKIŞTIRMA VE ÖNBELLEK
+#  Metin dosyaları sıkıştırılarak gönderilir (~%70 daha küçük), görsel ve
+#  css/js ziyaretçinin tarayıcısında saklanır. İkinci sayfa açılışı hızlanır.
+#  css/js adreslerinin sonunda ?v=... olduğu için (bm_asset_version) dosyayı
+#  güncellediğinde ziyaretçi eski sürümü görmez.
+# ============================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType text/javascript         "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 6 months"
+  ExpiresByType image/png               "access plus 6 months"
+  ExpiresByType image/webp              "access plus 6 months"
+  ExpiresByType image/gif               "access plus 6 months"
+  ExpiresByType image/svg+xml           "access plus 6 months"
+  ExpiresByType image/x-icon            "access plus 6 months"
+  ExpiresByType font/woff2              "access plus 1 year"
+  # HTML önbelleğe alınmaz: içerik panelden anında değişiyor
+  ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>

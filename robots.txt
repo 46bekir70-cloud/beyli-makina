@@ -1,0 +1,15 @@
+# Beyli Makina — arama motoru yönergeleri
+# Bütün arama motorları (Google, Yandex, Bing) siteyi tarayabilir.
+
+User-agent: *
+Allow: /
+
+# Yönetim paneli ve iç dosyalar taranmasın
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Site haritası — bütün sayfaların listesi
+Sitemap: https://www.beylimakina.com/sitemap.xml

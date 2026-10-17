@@ -1,0 +1,31 @@
+# Yükleme klasörü — burada YALNIZCA görsel durur, kod çalışmaz.
+#
+# Yükleme aracı zaten dosya türünü içeriğinden doğruluyor ve dosya adını
+# kendisi belirliyor (kullanıcının verdiği ad kullanılmıyor). Bu dosya ikinci
+# savunma hattı: bu klasöre bir şekilde .php dosyası düşse bile sunucu onu
+# çalıştırmaz. Bu, dosya yükleme özelliği olan sitelerdeki en yaygın ele
+# geçirme yolunu kapatır.
+
+# Apache'nin PHP modülü kullanılıyorsa motoru bu klasörde kapat
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+  php_flag engine off
+</IfModule>
+
+# PHP-FPM / CGI kurulumlarında yukarıdaki yetmez: çalıştırılabilir
+# uzantılara erişimi tamamen kapatıyoruz.
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|php8|phps|pht|cgi|pl|py|sh|lua|asp|aspx|jsp)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Klasör içeriği listelenmesin
+Options -Indexes -ExecCGI
+AddHandler default-handler .php .phtml .php3 .php4 .php5 .php7 .php8 .cgi .pl .py
