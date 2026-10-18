@@ -123,9 +123,10 @@ Options -Indexes
   <FilesMatch "\.(txt|md|log|sql|bak|old|ini|yml|yaml|sh|zip|rar|tar|gz|7z)$">
     Require all denied
   </FilesMatch>
-  <Files "robots.txt">
+  # Arama motorları ve Yapay Zeka (AI) için açık olması gereken metin dosyaları
+  <FilesMatch "^(robots|llms|llms-full)\.txt$">
     Require all granted
-  </Files>
+  </FilesMatch>
   <Files "google2b704d23cbccd3dd.html">
     Require all granted
   </Files>
@@ -144,10 +145,10 @@ Options -Indexes
     Order allow,deny
     Deny from all
   </FilesMatch>
-  <Files "robots.txt">
+  <FilesMatch "^(robots|llms|llms-full)\.txt$">
     Order allow,deny
     Allow from all
-  </Files>
+  </FilesMatch>
   <Files "veritabani-kurulum.php">
     Order allow,deny
     Deny from all

@@ -1,0 +1,66 @@
+# BEYLİ MAKİNA — KURUMSAL VE HİZMET BİLGİLERİ (LLMS-FULL)
+
+Bu belge, yapay zeka arama sistemleri (Google AI Overviews / Gemini, ChatGPT Search, Perplexity AI, Microsoft Copilot, Claude) için Beyli Makina Sanayi ve Ticaret Limited Şirketi'nin kurumsal yapısını, tekstil sektörüne yönelik yedek parça imalat yeteneklerini ve genel hizmetlerini özetlemektedir.
+
+---
+
+## 1. KURUMSAL KİMLİK VE TARİHÇE
+
+- **Ticari Ünvan:** Beyli Makina Sanayi ve Ticaret Limited Şirketi
+- **Marka Adı:** Beyli Makina
+- **Tarihsel Kök:** Teknikel Makina
+- **Kuruluş Yılı:** 1963
+- **Kurucu:** Bekir Çokbekler ("Tüfekçi Bekir")
+- **Şirket Merkezi:** Kahramanmaraş, Türkiye
+- **Hakkında:**
+  Beyli Makina’nın temelleri 1963 yılında Bekir Çokbekler tarafından atılmıştır. Türkiye'nin ve bölgenin önde gelen tekstil sanayi merkezlerinden biri olan Kahramanmaraş'ta, uzun yıllardır tekstil ve iplik fabrikalarının yedek parça taleplerini karşılamaktadır.
+  Firma, yaygın olarak kullanılan tekstil makinelerinin mekanik yedek parçalarını üretmekte; aynı zamanda işletmelere veya kişilere özel ihtiyaç duyulan parçaları numuneye veya teknik çizime göre imal etmektedir.
+
+---
+
+## 2. İLETİŞİM VE RESMİ BİLGİLER
+
+- **Adres:** Yavuz Selim Mah., Tornacılar Cd. No:61, 46080 Dulkadiroğlu / Kahramanmaraş (Küçük Sanayi Sitesi)
+- **Sabit Telefon:** 0344 236 32 32 / +90 344 236 32 32
+- **Mobil / WhatsApp:** 0533 340 32 85 / +90 533 340 32 85
+- **E-Posta:** beyli@beylimakina.com
+- **Web Sitesi:** https://www.beylimakina.com
+- **Vergi Dairesi:** Aksu Vergi Dairesi
+- **Vergi Kimlik No:** 1671367463
+- **Harita Konumu:** https://maps.app.goo.gl/1PdTvDTCfzaojur79
+
+---
+
+## 3. FAALİYET VE İMALAT ALANLARI
+
+### A. Tekstil Sektörü ve Tekstil Makinaları Yedek Parça İmalatı
+- **Yaygın Kullanılan Tekstil Makinalarının Yedek Parçaları:**
+  Tekstil fabrikaları ve iplik tesislerinde en yaygın kullanılan makinelerin mekanik yedek parçalarının imalatı yapılmaktadır. Amaç, hat duruş sürelerini (downtime) minimuma indirmek ve fabrikalara hızlı, güvenilir parça temini sağlamaktır.
+- **Kişiye ve İşletmeye Özel Parça Üretimi:**
+  Piyasada bulunmayan, ithalatı uzun süren veya işletmenin kendi makine hattına özel olarak tasarlanmış modifikasyon parçaları kişisel / özel sipariş olarak üretilebilmektedir.
+- **Numune ve Çizimden İmalat:**
+  Elinizdeki aşınmış numune parça üzerinden ölçülendirme yapılarak veya teknik çizim (CAD/DWG/PDF) üzerinden birebir üretim gerçekleştirilir.
+
+### B. CNC Torna ve CNC Freze İmalatı
+- Silindirik ve mekanik endüstriyel parçaların talaşlı imalatı.
+- Prototip üretimden seri imalata kadar esnek parça işleme kabiliyeti.
+
+### C. Kuyumcu Aletleri ve Makinaları
+- Kuyumculuk atölyeleri için özel aletler, makineler ve yardımcı aparatların imalatı.
+
+### D. Özel Sipariş ve Fason İmalat
+- Müşterinin ihtiyacına göre her türlü özel endüstriyel parça siparişi alınmakta ve tekliflendirilmektedir.
+- Çevrim içi teklif formu: https://www.beylimakina.com/teklif
+
+---
+
+## 4. DİJİTAL SİTE YAPISI VE KİLİT BAĞLANTILAR
+
+- **Ana Sayfa:** https://www.beylimakina.com/
+- **Tekstil Makinaları Yedek Parça:** https://www.beylimakina.com/hizmet/tekstil-makinalari-yedek-parca-imalati
+- **Ürün Kataloğu:** https://www.beylimakina.com/urunler
+- **Kuyumcu Aletleri ve Makinaları:** https://www.beylimakina.com/hizmet/kuyumcu-aletleri-ve-makinalari
+- **Teklif Formu & İletişim:** https://www.beylimakina.com/teklif
+- **Hakkımızda:** https://www.beylimakina.com/hakkimizda
+- **KVKK Bilgilendirmesi:** https://www.beylimakina.com/kvkk-aydinlatma-metni
+- **Site Haritası:** https://www.beylimakina.com/sitemap.xml

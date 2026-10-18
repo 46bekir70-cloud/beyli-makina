@@ -1,15 +1,72 @@
-# Beyli Makina — arama motoru yönergeleri
-# Bütün arama motorları (Google, Yandex, Bing) siteyi tarayabilir.
+# Beyli Makina — Arama Motoru ve Yapay Zeka (AI) Yönergeleri
+# Web: https://www.beylimakina.com
 
+# 1. Genel Arama Motorları (Google, Yandex, Bing vb.)
 User-agent: *
 Allow: /
-
-# Yönetim paneli ve iç dosyalar taranmasın
 Disallow: /teknikel/
 Disallow: /admin/
 Disallow: /inc/
 Disallow: /content/
 Disallow: /teklif-gonder.php
 
-# Site haritası — bütün sayfaların listesi
+# 2. Yapay Zeka Arama Motorları ve LLM Tarayıcıları
+# OpenAI / ChatGPT Arama Botları
+User-agent: GPTBot
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Perplexity AI Tarayıcısı
+User-agent: PerplexityBot
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Anthropic Claude Tarayıcısı
+User-agent: ClaudeBot
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Google Gemini ve Genişletilmiş Yapay Zeka
+User-agent: Google-Extended
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Apple Intelligence Arama Botu
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /teknikel/
+Disallow: /admin/
+Disallow: /inc/
+Disallow: /content/
+Disallow: /teklif-gonder.php
+
+# Site haritası — Bütün sayfaların ve ürünlerin listesi
 Sitemap: https://www.beylimakina.com/sitemap.xml
+
+# Yapay Zeka Standart Bilgi Belgeleri (LLM Context Standard)
+# https://www.beylimakina.com/llms.txt
+# https://www.beylimakina.com/llms-full.txt

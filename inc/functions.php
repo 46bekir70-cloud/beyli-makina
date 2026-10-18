@@ -650,14 +650,26 @@ function bm_organization_jsonld($content) {
     $kok  = bm_site_url();
 
     $veri = [
-        '@context' => 'https://schema.org',
-        '@type'    => 'Organization',
-        'name'     => bm_t('site.name', 'Beyli Makina Sanayi ve Ticaret Ltd. Şti.'),
-        'url'      => $kok . '/',
+        '@context'      => 'https://schema.org',
+        '@type'         => ['Organization', 'LocalBusiness', 'ManufacturingBusiness'],
+        'name'          => bm_t('site.name', 'Beyli Makina Sanayi ve Ticaret Ltd. Şti.'),
+        'legalName'     => 'Beyli Makina Sanayi ve Ticaret Limited Şirketi',
+        'alternateName' => ['Beyli Makina', 'Teknikel Makina'],
+        'foundingDate'  => '1963',
+        'founder'       => [
+            '@type'         => 'Person',
+            'name'          => 'Bekir Çokbekler',
+            'alternateName' => 'Tüfekçi Bekir',
+        ],
+        'taxID'         => '1671367463',
+        'vatID'         => 'TR1671367463',
+        'url'           => $kok . '/',
         // Google logo için en az 112x112 istiyor; kare işaret en iyi sonucu veriyor
-        'logo'     => $kok . '/images/favicon-192.png',
-        'image'    => $kok . '/images/logo.png',
+        'logo'          => $kok . '/images/favicon-192.png',
+        'image'         => $kok . '/images/logo.png',
+        'hasMap'        => 'https://maps.app.goo.gl/1PdTvDTCfzaojur79',
     ];
+
     // Panelde henüz doldurulmamış örnek değerler (+905XXXXXXXXX gibi) arama
     // motoruna gönderilmesin; eksik bilgi, yanlış bilgiden iyidir.
     $gercek = function ($v) {
@@ -667,21 +679,78 @@ function bm_organization_jsonld($content) {
 
     if ($gercek($site['phone_link'] ?? '')) $veri['telephone'] = $site['phone_link'];
     if ($gercek($site['email'] ?? ''))      $veri['email'] = $site['email'];
-    if (!empty($site['address'])) {
-        $veri['address'] = [
-            '@type'           => 'PostalAddress',
-            'streetAddress'   => $site['address'],
-            'addressCountry'  => 'TR',
-        ];
-    }
 
-    // Sosyal medya hesapları — Google bunları aynı markaya bağlıyor
-    $sameAs = [];
+    // Müşteri hizmetleri / iletişim noktası
+    $telefon = $gercek($site['phone_link'] ?? '') ?: '+903442363232';
+    $veri['contactPoint'] = [
+        [
+            '@type'             => 'ContactPoint',
+            'telephone'         => $telefon,
+            'contactType'       => 'customer service',
+            'areaServed'        => 'TR',
+            'availableLanguage' => ['Turkish'],
+        ],
+    ];
+
+    $adresMetni = !empty($site['address'])
+        ? $site['address']
+        : 'Yavuz Selim, Tornacılar Cd. No:61, 46080 Dulkadiroğlu/Kahramanmaraş';
+
+    $veri['address'] = [
+        '@type'           => 'PostalAddress',
+        'streetAddress'   => $adresMetni,
+        'addressLocality' => 'Kahramanmaraş',
+        'addressRegion'   => 'Dulkadiroğlu',
+        'postalCode'      => '46080',
+        'addressCountry'  => 'TR',
+    ];
+
+    // Yapay zeka arama motorları için kurumsal uzmanlık alanları (Entity Knowledge)
+    $veri['knowsAbout'] = [
+        'Tekstil Makinaları Yedek Parça İmalatı',
+        'Yaygın Tekstil Makinaları Yedek Parçaları',
+        'Kişiye ve İşletmeye Özel Parça Üretimi',
+        'Tekstil Fabrikaları İçin Özel Parça İmalatı',
+        'CNC Torna İmalatı',
+        'CNC Freze İmalatı',
+        'Talaşlı İmalat',
+        'Kuyumcu Aletleri ve Makinaları',
+        'Özel Sipariş ve Fason İmalat',
+    ];
+
+    // Sunulan hizmet ve ürün katalog özeti
+    $veri['hasOfferCatalog'] = [
+        '@type' => 'OfferCatalog',
+        'name'  => 'Beyli Makina İmalat ve Parça Kataloğu',
+        'itemListElement' => [
+            [
+                '@type' => 'OfferCatalog',
+                'name'  => 'Tekstil ve İplik Makineleri Yedek Parçaları (Yaygın & Özel İmalat)',
+            ],
+            [
+                '@type' => 'OfferCatalog',
+                'name'  => 'Kişiye ve İşletmeye Özel Parça Üretimi',
+            ],
+            [
+                '@type' => 'OfferCatalog',
+                'name'  => 'CNC Torna ve Freze Talaşlı İmalat',
+            ],
+            [
+                '@type' => 'OfferCatalog',
+                'name'  => 'Kuyumcu Makineleri ve El Aletleri',
+            ],
+            [
+                '@type' => 'OfferCatalog',
+                'name'  => 'Özel Sipariş & Fason Parça İmalatı',
+            ],
+        ],
+    ];
+
+    // Sosyal medya ve harita profilleri — Google ve yapay zeka bunları aynı markaya bağlar
+    $sameAs = ['https://maps.app.goo.gl/1PdTvDTCfzaojur79'];
     $ekle = function ($u) use (&$sameAs, $gercek) {
         $u = bm_safe_url($u);
         if (strpos($u, 'http') !== 0 || !$gercek($u)) return;
-        // Sosyal ağın ana sayfası hesap adresi değildir (instagram.com gibi):
-        // Google'a "bizim hesabımız" diye bildirmek yanlış olur.
         $yol = trim((string)parse_url($u, PHP_URL_PATH), '/');
         if ($yol === '') return;
         $sameAs[] = $u;
@@ -693,6 +762,43 @@ function bm_organization_jsonld($content) {
     }
     $sameAs = array_values(array_unique($sameAs));
     if ($sameAs) $veri['sameAs'] = $sameAs;
+
+    return json_encode($veri, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+}
+
+/**
+ * Hizmet sayfası için Schema.org Service yapısal verisi.
+ *
+ * Yapay zeka modelleri ve arama motorları sunulan hizmetin adını,
+ * sağlayıcısını (Beyli Makina) ve açıklamasını doğrudan buradan çeker.
+ */
+function bm_service_jsonld($service) {
+    if (empty($service) || empty($service['title'])) return '';
+    $kok = bm_site_url();
+    $ad  = trim((string)$service['title']);
+    $url = $kok . '/hizmet/' . rawurlencode((string)($service['slug'] ?? ''));
+
+    $veri = [
+        '@context'    => 'https://schema.org',
+        '@type'       => 'Service',
+        'name'        => $ad,
+        'url'         => $url,
+        'description' => trim((string)($service['hero_subtitle'] ?: ($service['desc'] ?? $ad))),
+        'provider'    => [
+            '@type' => 'ManufacturingBusiness',
+            'name'  => bm_t('site.name', 'Beyli Makina Sanayi ve Ticaret Ltd. Şti.'),
+            'url'   => $kok . '/',
+        ],
+        'areaServed'  => [
+            '@type' => 'Country',
+            'name'  => 'Türkiye',
+        ],
+    ];
+
+    $img = trim((string)($service['hero_image'] ?: ($service['card_image'] ?? ($service['image'] ?? ''))));
+    if ($img !== '') {
+        $veri['image'] = preg_match('#^https?://#i', $img) ? $img : $kok . bm_src('/' . ltrim($img, '/'));
+    }
 
     return json_encode($veri, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 }

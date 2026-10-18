@@ -57,6 +57,9 @@ $bm_breadcrumb = [
     ['ad' => $service['title'], 'yol' => ''],
 ];
 
+// Hizmetin arama motoru ve yapay zeka yapısal verisi (header.php basıyor)
+$bm_jsonld = [bm_service_jsonld($service)];
+
 require __DIR__ . '/inc/header.php';
 ?>
 
