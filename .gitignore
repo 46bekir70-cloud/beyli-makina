@@ -14,6 +14,7 @@ teknikel/credentials.json
 # Sistem ve Log Dosyaları
 # ==========================================
 *.log
+*.bat
 Thumbs.db
 .DS_Store
 
